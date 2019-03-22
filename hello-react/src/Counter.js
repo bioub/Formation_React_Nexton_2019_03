@@ -12,6 +12,7 @@ class Counter extends Component {
     count: 0
   };
   handleClick = () => {
+    
     this.setState({
       count: this.state.count + 1
     });
