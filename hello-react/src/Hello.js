@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Hello({name}) {
+function Hello({name = ''}) {
   
   // return React.createElement('div', { className: 'Hello' }, `Hello ${name}`);
   return (

@@ -2,9 +2,11 @@ import css from "./Accordion.module.css";
 
 import React, { Component } from "react";
 import classNames from "classnames";
+import PropTypes from 'prop-types';
 
 class Accordion extends Component {
   render() {
+    /** @type {string[]} items */
     let { title = "", items = [], opened = false, selected = "", onSelected, onToggle } = this.props;
 
     items = items.map(item => {
@@ -41,5 +43,9 @@ class Accordion extends Component {
     );
   }
 }
+
+Accordion.propTypes = {
+  title: PropTypes.string,
+};
 
 export { Accordion };

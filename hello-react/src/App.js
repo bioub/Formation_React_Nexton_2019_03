@@ -31,7 +31,7 @@ class App extends Component {
           onToggle={this.handleToggle}
           onSelected={this.handleSelected}
           selected={this.state.prenom}
-          title="Prénoms"
+          title={"Prénoms"}
           items={["Romain", "Jean", "Eric"]}
           opened={this.state.opened}
         />

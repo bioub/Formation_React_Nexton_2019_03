@@ -10,6 +10,9 @@ class Login extends Component {
       [event.target.name]: event.target.value
     });
   };
+  /**
+   * @param {Event} event
+   */
   handleSubmit = event => {
     event.preventDefault();
     console.log(this.state);
